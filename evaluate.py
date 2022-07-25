@@ -12,7 +12,7 @@ import json
 import sys
 import copy
 
-from model import build_model, lossFun, load_model
+from model1 import build_model, lossFun, load_model
 
 def split_sample(image, in_dim):
 	width = in_dim[1]

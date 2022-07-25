@@ -3,7 +3,7 @@ import pickle as pkl
 from keras.callbacks import LearningRateScheduler
 
 from tensorflow.keras import optimizers
-from sklearn.model_selection import train_test_split as tts
+
 import datetime
 import time
 import cv2
@@ -53,7 +53,7 @@ test_generator = DataGenerator(IDs_test, images_dir, labels_dir, **train_paramet
 # Build model
 model = build_model(input_h, input_w)
 adam = optimizers.Adam(learning_rate = learning_rate)
-model.compile(optimizer = adam, loss=lossFun)
+model.compile(optimizer = adam, loss=lossFun, run_eagerly=True)
 model.summary()
 
 # Train & save model

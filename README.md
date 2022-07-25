@@ -6,7 +6,7 @@ It contains a training data generator which creates japanese newspaper-like imag
 ## Training data generation
 First have a look through the parameters in the below file and run it in order to generate (recommended) about 1000 training images and labels.
 ```Python
-generate.py
+generate_data.py
 ```
 You can look at the generated labels for an example image by running:
 ```Python
@@ -16,7 +16,7 @@ visualise.py
 ## Training the model
 Model architecture is found in:
 ```Python
-model.py
+model1.py
 ```
 Run:
 ```Python
